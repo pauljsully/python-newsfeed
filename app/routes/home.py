@@ -1,4 +1,5 @@
 from flask import Blueprint, render_template, session, redirect
+from flask import Blueprint, render_template, session, redirect
 from app.models import Post
 from app.db import get_db
 

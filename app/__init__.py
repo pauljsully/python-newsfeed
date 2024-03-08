@@ -1,5 +1,6 @@
 from flask import Flask
 from app.routes import home, dashboard, api
+from app.routes import home, dashboard, api
 from app.db import init_db
 from app.utils import filters
 
