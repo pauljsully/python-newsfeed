@@ -1,6 +1,5 @@
 from flask import Flask
 from app.routes import home, dashboard, api
-from app.routes import home, dashboard, api
 from app.db import init_db
 from app.utils import filters
 
@@ -20,10 +19,6 @@ def create_app(test_config=None):
         DEBUG=True,
         PROPAGATE_EXCEPTIONS=True
     )
-
-    #app.run(debug=True)
-    if __name__ == "__main__":
-        app.run(debug=True)
 
     # register routes
     app.register_blueprint(home)
